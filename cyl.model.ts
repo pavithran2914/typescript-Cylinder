@@ -1,13 +1,14 @@
 export class Cly {
-  r: number;
   h: number;
-  constructor(r: number, h:number){
-    this.r = r;
+  d: number;
+  constructor(h: number, d:number){
     this.h = h;
+    this.d = d;
     this.cri();
   }
   cri(){
-    console.log('cir=',Math.PI*(this.r*this.r)*this.h);
+    var radius = this.d / 2;
+    console.log('cir=',this.h * Math.PI * radius * radius);
   }
 }
 
